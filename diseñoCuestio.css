@@ -1,0 +1,121 @@
+div#presentacion, div#nutri, div#grasas-vitaminas, div#preg-img, div#cuadro-equi, div#definiciones{
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-bottom: 20px;
+    padding-top: 1px;
+}
+div#presentacion{
+	margin-top: -67px;
+    background-color: #2C3E50;
+    color: white;
+    padding-top: 0px;
+}
+div#presentacion > p {
+	display: inline;
+}
+div#presentacion > input#nombre{
+	margin-left: 3%;
+}
+div#nutri{
+	background-color:#ABEBC6;
+}
+div#grasas-vitaminas{
+	background-color: #F9E79F;
+}
+div#cuadro-equi{
+	background-color: #D5F5E3;
+}
+div#definiciones{
+	background-color: #F5B7B1;
+}
+div#preg-img{
+	background-color: white;
+}
+div#presentacion h1{
+	text-align: center;
+	color: orange;
+	font-size: 100px;
+	border: 5px red dashed;
+}
+div#nutri h2, div#grasas-vitaminas h2, div#cuadro-equi h2, div#definiciones h2, div#preg-img h2{
+	text-align: center;
+	font-size: 50px;
+	border: 3px #7F0000 dotted;
+}
+div.cuestionario ol li p, div#presentacion p, div.cuestionario p{
+	font-size: 25px;
+}
+div#nutri ol, div#grasas-vitaminas ol{
+	padding-left: 25px;
+}
+div#nutri ol li p, div#grasas-vitaminas ol li p {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-left: 3px;
+}
+div#definiciones ol li input.def{
+	margin-left: 30%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+div#cuadro-equi table {
+	border: 2px solid green;		
+	margin-left: 300px;
+}
+div#cuadro-equi table tr td, th{
+	border: 1px solid black;
+}
+div#cuadro-equi table tr td input.celda-canti{
+	width: 65px;
+}
+div#cuadro-equi table tr td input.celda-alim{
+	width: 95px;
+}
+#respCorrecTabla, .respCorrec, .respTabla, .respDef{
+	display: none;
+	font-style: oblique;
+	text-align: center;
+	background-color: #69EEE8;
+}
+.imagen-plato{
+	width: 400px;
+	height: 400px;
+	float: right;
+	padding-top: 150px;
+}
+#preg-img > p{
+	margin-bottom: 0px;
+}
+div#preg-img ol{
+	display: inline-block;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+div#preg-img ol li{
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+div#cuadro-equi table tr td.celda-cont{		
+	text-align: center;
+}
+div#boton-enviar{
+    margin-top: 30px;
+    margin-left: 25%;
+}
+input.boton-fin{
+	display: inline;
+	font-size: 50px; 
+}
+input.boton-fin:hover{
+	background-color: black;
+	color: white;
+}
+img.dedo-señalando-IzqDer, img.dedo-señalando-IzqDer{
+	display: inline;
+	height: 50px;
+}
+img.dedo-señalando-ArrAba, img.dedo-señalando-abajo-ArrAba{
+	display: block;
+	height: 50px;
+	margin-left: 130px;
+}

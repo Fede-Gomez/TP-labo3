@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Trabajo práctico Formulario</title>
+	<link rel="stylesheet" type="text/css" href="diseñoCuestio.css">
+	<script src="correccionCuestio.js"></script>
+	<meta charset="UTF-8">	
+</head>
+<body> 
+	<div id="presentacion">
+		<h1>Examen de nutrición</h1>
+		<p>Examen con varias preguntas donde habrá 5 preguntas con respuesta única, 3 preguntas con respuesta múltiples, 3 preguntas donde se dará una definición, se deberá indicar a que termino se refiere dicha definición, un ejercicio referido a la imagen indicada y completar un cuadro detallado <br/><br/>Ingrese su nombre para comenzar (el cuestionario no evalua hasta que se ingrese un nombre)</p>
+		<input type="text" name="nombre" id="nombre" placeholder="Nombre" required/>
+		<input type="button" name="empezar" id="empezar" value="Empezar">
+	</div>
+		<div id="nutri" class="cuestionario">
+		<h2>Sección nutrición, seleccione la opción correcta</h2>
+		<ol>
+			<li><p>Algunas de las funciones de las proteínas son:</p>	
+				<input type="radio" name="punto1" value="no" id="1_selecSimple1" class="punt1">
+				<label for="1_selecSimple1">Contracción y relajación muscular<br/></label>
+					
+				<input type="radio" name="punto1" value="no" id="1_selecSimple2" class="punt1">
+				<label for="1_selecSimple2">Hormonal y reguladora de actividades<br/></label>
+					
+				<input type="radio" name="punto1" value="no" id="1_selecSimple3" class="punt1">
+				<label for="1_selecSimple3">Esenciales para el crecimiento y no pueden ser sustituidas por otro nutriente<br/></label>
+					
+				<input type="radio" name="punto1" value="si" id="1_selecSimple4" class="punt1">
+				<label for="1_selecSimple4">Todas son correctas<br/></label>
+
+				<input type="radio" name="punto1" value="no" id="1_selecSimple5" class="punt1">
+				<label for="1_selecSimple1">Todas son incorrectas<br/></label>
+			</li>
+			<li><p>La deficiencia de calcio produce:</p>
+				<input type="radio" name="punto2" value="si" id="2_selecSimple1" class="punt1">
+				<label for="2_selecSimple1">Osteoporosis y tetania<br/></label>
+
+				<input type="radio" name="punto2" value="no" id="2_selecSimple2" class="punt1">
+				<label for="2_selecSimple2">Nefrolitiasis, hipercalcemia<br/></label>
+					
+				<input type="radio" name="punto2" value="no" id="2_selecSimple3" class="punt1">
+				<label for="2_selecSimple3">Alteraciones neurológicas por hipercalcificación de vértebras<br/></label>
+					
+				<input type="radio" name="punto2" value="no" id="2_selecSimple4" class="punt1">
+				<label for="2_selecSimple4">Ninguna es correcta<br/></label>
+
+				<input type="radio" name="punto2" value="no" id="2_selecSimple5" class="punt1">
+				<label for="2_selecSimple5">Todas son correctas<br/></label>
+			</li>
+			<li><p>Los electrolitos son sustancias que en solución acuosa poseen la propiedad de:</p>
+				<input type="radio" name="punto3" value="si" id="3_selecSimple1" class="punt1">
+				<label for="3_selecSimple1">Disociarse en iones<br/></label>
+					
+				<input type="radio" name="punto3" value="no" id="3_selecSimple2" class="punt1">
+				<label for="3_selecSimple2">Disociarse en partículas sin carga electrica<br/></label>
+					
+				<input type="radio" name="punto3" value="no" id="3_selecSimple3" class="punt1">
+				<label for="3_selecSimple3">Mantener sus moléculas sin disociar<br/></label>
+					
+				<input type="radio" name="punto3" value="no" id="3_selecSimple4" class="punt1">
+				<label for="3_selecSimple4">Todas son correctas<br/></label>
+					
+				<input type="radio" name="punto3" value="no" id="3_selecSimple5" class="punt1">
+				<label for="3_selecSimple5">Ninguna es correcta<br/></label>
+			</li>
+			<li><p>La absorción de Hierro se ve favorecida por la presencia en los alimentos de:</p>
+				<input type="radio"	name="punto4" id="4_selecSimple1" value="no" class="punt1">
+				<label for="4_selecSimple1">Oxalatos<br/></label>
+
+				<input type="radio" name="punto4" id="4_selecSimple2" value="no" class="punt1">
+				<label for="4_selecSimple2">Lactosa<br/></label>
+
+				<input type="radio" name="punto4" id="4_selecSimple3" value="no" class="punt1">
+				<label for="4_selecSimple3">Exceso de grasas<br/></label>
+
+				<input type="radio" name="punto4" id="4_selecSimple4" value="si" class="punt1">
+				<label for="4_selecSimple4">Todas las anteriores<br/></label>
+
+				<input type="radio" name="punto4" id="4_selecSimple5" value="no" class="punt1">
+				<label for="4_selecSimple5">Ninguna de las anteriores<br/></label>
+			</li>
+		</ol>
+	</div>
+	<div id="grasas-vitaminas" class="cuestionario">
+		<h2>Sección grasas y vitaminas, seleccione la/las opciones correctas</h2>
+		<ol>	
+			<li><p>¿Que producen las grasas trans en el organismo?</p>
+				<input type="checkbox" value="no" id="1_selecMulti1" class="punt2">
+				<label for="1_selecMulti1">Elevan el colesterol HDL <br/></label>
+
+				<input type="checkbox" value="si" id="1_selecMulti2" class="punt2">
+				<label for="1_selecMulti2">Reducen el colesterol HDL <br/></label>
+					
+				<input type="checkbox" value="si" id="1_selecMulti3" class="punt2">
+				<label for="1_selecMulti3">Elevan el colesterol LDL <br/></label>
+					
+				<input type="checkbox" value="no" id="1_selecMulti4" class="punt2">
+				<label for="1_selecMulti4">Ninguan es correcta <br/></label>
+			</li>
+
+			<li><p>¿Cuáles de estas vitaminas son complejo B?</p>
+				<input type="checkbox" name="punto5" value="no" id="2_selecMulti1" class="punt2">
+				<label for="2_selecMulti1">Calcitriol<br/></label>
+
+				<input type="checkbox" value="si" id="2_selecMulti2" class="punt2">
+				<label for="2_selecMulti2">Tiamina<br/></label>
+
+				<input type="checkbox" value="no" id="2_selecMulti3" class="punt2">
+				<label for="2_selecMulti3">&Aacute;cido ascorbico<br/></label>
+
+				<input type="checkbox" value="si" id="2_selecMulti4" class="punt2">
+				<label for="2_selecMulti4">Cobalamina<br/></label>
+			</li>
+
+			<li><p>¿En donde se puede encontrar hierro heminico?</p>
+				<input type="checkbox" value="si" id="3_selecMulti1" class="punt2">
+				<label for="3_selecMulti1">Carne de pollo<br/></label>
+
+				<input type="checkbox" value="no" id="3_selecMulti2" class="punt2">
+				<label for="3_selecMulti2">Lentejas<br/></label>
+
+				<input type="checkbox" value="no" id="3_selecMulti3" class="punt2">
+				<label for="3_selecMulti3">Garbanzos<br/></label>
+
+				<input type="checkbox" value="si" id="3_selecMulti4" class="punt2">
+				<label for="3_selecMulti4">Carne vacuna<br/></label>			
+			</li>
+		</ol>
+	</div>
+
+	<div id="cuadro-equi" class="cuestionario">
+		<h2>Equivalencia de alimentos</h2>
+		<p>Complete los lugares faltantes donde corresponda</p>
+		<table>
+			<tr>
+				<th colspan="2" id="respCorrecTabla">Respuestas Correctas</th>
+				<th>Alimentos</th>
+				<th>Cantidad</th>
+				<th>Equivalencia</th>
+			</tr>
+			<tr> 
+				<td class="respTabla"></td>
+				<td class="respTabla">200</td>
+				<td class="celda-cont">Leche</td>
+				<td class="celda-cont"><input type="text" id="cant1" class="celda-canti"></td>
+				<td>1 vaso grande</td>
+			</tr>
+			<tr>
+				<td class="respTabla">Queso</td>				
+				<td class="respTabla"></td>	
+				<td class="celda-cont"><input type="text" id="alim1" class="celda-alim"></td>
+				<td class="celda-cont">50</td>
+				<td>5 cucharadas tipo postre al ras o 3 lonjas</td>
+			</tr>
+			<tr>
+				<td class="respTabla">Huevo</td>
+				<td class="respTabla">20</td>										
+				<td class="celda-cont"><input type="text" id="alim2" class="celda-alim"></td>
+				<td class="celda-cont"><input type="text" id="cant2" class="celda-canti"></td>
+				<td>3 unidades por semana</td>
+			</tr>
+			<tr>
+				<td class="respTabla">Carnes</td>
+				<td class="respTabla">150</td>										
+				<td class="celda-cont"><input type="text" id="alim3" class="celda-alim"></td>
+				<td class="celda-cont"><input type="text" id="cant3" class="celda-canti"></td>
+				<td>1 churrasco mediano o 1/8 de pollo o 1 filet mediano o 2 milanesas chicas</td>
+			</tr>
+			<tr>
+				<td class="respTabla"></td>	
+				<td class="respTabla">200</td>				
+				<td class="celda-cont">Hortalizas</td>
+				<td class="celda-cont"><input type="text" id="cant4" class="celda-canti"></td>
+				<td>1 porción grande</td>
+			</tr>
+			<tr>
+				<td class="respTabla">Frutas</td>
+				<td class="respTabla"></td>
+				<td class="celda-cont"><input type="text" id="alim4" class="celda-alim"></td>
+				<td class="celda-cont">150</td>
+				<td>1 unidad mediana</td>
+			</tr>
+			<tr>
+				<td class="respTabla">Cereales</td>
+				<td class="respTabla"></td>
+				<td class="celda-cont"><input type="text" id="alim5" class="celda-alim"></td>
+				<td class="celda-cont">50</td>
+				<td>3 cucharadas soperas</td>
+			</tr>
+			<tr>
+				<td class="respTabla"></td>
+				<td class="respTabla">100</td>
+				<td class="celda-cont">Pan y derivados</td>
+				<td class="celda-cont"><input type="text" id="cant5" class="celda-canti"></td>
+				<td>3 rebanadas o 3 mignones o 14 galletitas</td>
+			</tr>
+			<tr>
+				<td class="respTabla">Azucar</td>
+				<td class="respTabla"></td>
+				<td class="celda-cont"><input type="text" id="alim6" class="celda-alim"></td>
+				<td class="celda-cont">10</td>
+				<td>2 cucharadas tamaño te</td>
+			</tr>
+			<tr>
+				<td class="respTabla"></td>
+				<td class="respTabla">15</td>
+				<td class="celda-cont">Dulce</td>
+				<td class="celda-cont"><input type="text" id="cant6" class="celda-canti"></td>
+				<td>1 cucharada tipo postre</td>
+			</tr>
+			<tr>
+				<td class="respTabla">Aceite</td>					
+				<td class="respTabla"></td>
+				<td class="celda-cont"><input type="text" id="alim7" class="celda-alim"></td> <!-- aceite -->
+				<td class="celda-cont">15</td>
+				<td>1 cucharada tipo sopera</td>
+			</tr>
+			<tr>
+				<td class="respTabla"></td>
+				<td class="respTabla">10</td>
+				<td class="celda-cont">Grasa</td>
+				<td class="celda-cont"><input type="text" id="cant7" class="celda-canti"></td>
+				<td>1 cucharada tamaño postre</td>
+			</tr>
+		</table>
+	</div>
+	<div id="definiciones" class="cuestionario">
+		<h2>Sección general, indique a que definición corresponde</h2>
+		<ol>
+			<li><p>Incremento de tejido adiposo acompañado de aumento de peso</p>
+				<input type="text" class="def" id="def1">
+				<span class="respDef">Respuesta correcta: Obesidad</span>
+			</li>
+			<li><p>Enfermedad cronica caracterizada por una alteracion del metabolismo de la glucosa y de otras sustancias como lipidos</p>
+				<input type="text" class="def" id="def2">
+				<span class="respDef">Respuesta correcta: Diabetes Mellitus</span>
+			</li>
+			<li><p>Es la disminucion en el  numero o tamaño de los globulos rojos, o la cantidad de hemoglobina que poseen</p>
+				<input type="text" class="def" id="def3">
+				<span class="respDef">Respuesta correcta: Anemia</span>
+			</li>
+		</ol>	
+	</div>
+	<div id="preg-img" class="cuestionario">
+		<img src="plato-nutricional.jpeg" alt="plato-nutricional" class="imagen-plato">
+		<h2>Comidas diarias</h2>
+		<p>En base a la imagen mostrada del plato nutricional, ordenar las recomendaciones según grupo</p>
+		<ol>
+			<li>
+				<select id="op1" class="punt3">
+					<option value="ver-fru" id="pri-grupo">Verduras y frutas</option>
+					<option value="carbo">Legumbres, cereales, papa, pan y pastas</option>
+					<option value="lacteo">Leche, yogur y queso</option>
+					<option value="proteina">Carnes y huevo</option>
+					<option value="fibra">Aceites, frutas secas y semillas</option>
+					<option value="grasas-dulces">Opcionales: dulces y grasas</option>
+				</select>
+			</li>
+			<li>
+				<select id="op2" class="punt3">
+					<option value="grasas-dulces">Opcionales: dulces y grasas</option>
+					<option value="ver-fru">Verduras y frutas</option>
+					<option value="proteina">Carnes y huevo</option>
+					<option value="fibra">Aceites, frutas secas y semillas</option>
+					<option value="carbo" id="seg-grupo">Legumbres, cereales, papa, pan y pastas</option>
+					<option value="lacteo">Leche, yogur y queso</option>
+				</select>
+			</li>
+			<li>
+				<select id="op3" class="punt3">
+					<option value="fibra">Aceites, frutas secas y semillas</option>
+					<option value="ver-fru">Verduras y frutas</option>
+					<option value="grasas-dulces">Opcionales: dulces y grasas</option>
+					<option value="lacteo" id="ter-grupo">Leche, yogur y queso</option>
+					<option value="proteina">Carnes y huevo</option>
+					<option value="carbo">Legumbres, cereales, papa, pan y pastas</option>
+				</select>
+			</li>
+			<li>
+				<select id="op4" class="punt3">
+					<option value="carbo">Legumbres, cereales, papa, pan y pastas</option>
+					<option value="fibra">Aceites, frutas secas y semillas</option>
+					<option value="proteina" id="cuar-grupo">Carnes y huevo</option>
+					<option value="ver-fru">Verduras y frutas</option>
+					<option value="grasas-dulces">Opcionales: dulces y grasas</option>
+					<option value="lacteo">Leche, yogur y queso</option>
+				</select>
+			</li>
+			<li>
+				<select id="op5" class="punt3">
+					<option value="proteina">Carnes y huevo</option>
+					<option value="ver-fru">Verduras y frutas</option>
+					<option value="grasas-dulces">Opcionales: dulces y grasas</option>
+					<option value="lacteo">Leche, yogur y queso</option>
+					<option value="carbo">Legumbres, cereales, papa, pan y pastas</option>
+					<option value="fibra" id="quin-grupo">Aceites, frutas secas y semillas</option>
+				</select>
+			</li>
+			<li>
+				<select id="op6" class="punt3">
+					<option value="carbo">Legumbres, cereales, papa, pan y pastas</option>
+					<option value="grasas-dulces" id="sex-grupo">Opcionales: dulces y grasas</option>
+					<option value="ver-fru">Verduras y frutas</option>
+					<option value="fibra">Aceites, frutas secas y semillas</option>
+					<option value="proteina">Carnes y huevo</option>
+					<option value="lacteo">Leche, yogur y queso</option>
+				</select>
+			</li>
+		</ol>
+	</div>
+	<div id="boton-enviar">
+		<img src="dedo-señalando-abajo.jpg" alt="dedo_apuntando_abajo" class="dedo-señalando-ArrAba">
+		<img src="dedo-señalando-der.jpg" alt="dedo_apuntando_derecha" class="dedo-señalando-IzqDer">
+		<input type="button" value="Finalizar" id="finalizar" class="boton-fin">
+		<img src="dedo-señalando-izq.png" alt="dedo_apuntando_izquierda" class="dedo-señalando-IzqDer">
+		<img src="dedo-señalando-arriba.jpg" alt="dedo_apuntando_arriba" class="dedo-señalando-ArrAba">		
+	</div>
+	<script>
+		"use strict"
+		var puntaje = 0;
+
+//vec(vectores) que tienen las soluciones
+		var vecSelecIma = Array();
+		var solDef = Array();
+		var solTablaCant = Array();
+		var solTablaAlim = Array();
+
+
+// lo pongo como vector porqe necesito que si o si este en el orden que estoy agregando
+vecSelecIma.push(	document.getElementById("pri-grupo"),
+					document.getElementById("seg-grupo"),
+					document.getElementById("ter-grupo"),
+					document.getElementById("cuar-grupo"),
+					document.getElementById("quin-grupo"),
+					document.getElementById("sex-grupo")
+				);
+solTablaCant.push(200,20,150,200,100,15,10);
+solTablaAlim.push("queso","huevo","carnes","frutas","cereales","azúcar","aceite");
+solDef.push("obesidad","diabetes mellitus", "anemia");
+
+var respTabla = document.getElementsByClassName("respTabla");
+var respDef = document.getElementsByClassName("respDef");
+var vecUnico = document.getElementsByClassName("punt1");
+var vecMulti = document.getElementsByClassName("punt2");
+var vecOrdenImg = document.getElementsByClassName("punt3");
+var vecTablaAlim = document.getElementsByClassName("celda-alim");
+var vecTablaCant = document.getElementsByClassName("celda-canti");
+var vecDef = document.getElementsByClassName("def");
+	document.getElementById("finalizar").onclick = corregir;			
+		</script>
+</body>
+</html>	
